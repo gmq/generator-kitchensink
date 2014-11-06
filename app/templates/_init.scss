@@ -1,0 +1,8 @@
+<% if(includeNormalize)  {%>@import 'normalize-scss/normalize';
+<% } %><% if(includeScut) { %>@import 'scut/dist/scut';
+@include scut-reset;
+<% } else { %>*, *:before, *:after {
+  box-sizing: border-box;
+}<% } %><% if(includeSusy) { %>@import 'susy';
+@include border-box-sizing;
+<% } %><% if(includeBreakpoint) { %>@import 'breakpoint-sass/stylesheets/breakpoint';<% } %>

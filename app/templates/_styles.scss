@@ -1,0 +1,4 @@
+@charset "UTF-8";
+<% if(includeNormalize || includeSusy) { %>
+@import 'modules/init';
+<% } %>
