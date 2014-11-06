@@ -1,13 +1,18 @@
 {
   "name": "generator-kitchensink",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Yeoman generator for frontend development with everything but the kitchen sink (Assemble, grunt-webfont, autoprefixer, normalize.css, Susy, Breakpoint, Scut.). All optional.",
   "keywords": [
     "yeoman-generator",
-    "bones",
     "theme",
     "front-end",
-    "assemble"
+    "assemble",
+    "webfont",
+    "autoprefixer",
+    "normalize",
+    "susy",
+    "breakpoint",
+    "scut"
   ],
   "homepage": "https://github.com/gmq/generator-kitchensink",
   "bugs": "https://github.com/gmq/generator-kitchensink/issues",
