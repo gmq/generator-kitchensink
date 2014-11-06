@@ -14,7 +14,6 @@ It's based on [generator-webapp](https://github.com/yeoman/generator-webapp) and
 
 ## Ruby Caveats
 - Susy requires installing the [Susy gem](http://susydocs.oddbird.net/en/latest/install/).
-- Breakpoints require installing the [Breakpoints gem](https://github.com/at-import/breakpoint/wiki/Installation). 
 
 The best solution for this problem is to use [Bundler](http://bundler.io) and the generated Gemfile.
 
