@@ -36,6 +36,14 @@ module.exports = function(grunt) {
         <%
         } %>
         watch: {
+            sass: {
+                files: ['<%%= yeoman.src %>/css/{,*/}*.{scss,sass}'],
+                tasks: ['sass:server', 'autoprefixer']
+            },
+            styles: {
+                files: ['<%%= yeoman.src %>/css/{,*/}*.css'],
+                tasks: ['newer:copy:styles', 'autoprefixer']
+            },
             js: {
                     files: ['<%%= yeoman.src %>/scripts/{,*/}*.js'],
                     tasks: ['jshint'],
@@ -47,8 +55,10 @@ module.exports = function(grunt) {
                 options: {
                     livereload: '<%%= connect.options.livereload %>'
                 },
-                files: ['<%%= yeoman.src %>/templates/{,*/}*.hbs', '.tmp/styles/{,*/}*.css', '<%%= yeoman.src %>/images/{,*/}*','<%%= yeoman.src %>/css/{,*/}*.{scss,sass}',
-                    '<%%= yeoman.src %>/css/{,*/}{,*/}*.{scss,sass}'],
+                files: [
+                        '<%%= yeoman.src %>/templates/{,*/}*.hbs',
+                      '.tmp/css/{,*/}*.css',
+                      '<%%= yeoman.src %>/images/{,*/}*'],
                 tasks: ['assemble']
             },
         },
